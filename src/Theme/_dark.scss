@@ -1,0 +1,7 @@
+@import '../variables';
+
+body.dark-theme {
+    --text-color: #{$text-color-dark};
+    --background-color: #{$background-color-dark};
+    --secondary-color: #{$secondary-color-dark};
+}

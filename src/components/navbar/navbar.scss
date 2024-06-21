@@ -1,0 +1,14 @@
+@import '../../variables';
+@import '../../Theme/dark';
+@import '../../Theme/light';
+
+.navbar{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+button{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+

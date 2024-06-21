@@ -1,0 +1,43 @@
+@import '../../variables';
+@import '../../Theme/dark';
+@import '../../Theme/light';
+
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--background-color);
+
+    .animation{
+        display: inline-block;
+        width: 30%;
+        text-align: center;
+    }
+    .randomString{
+        color: var(--text-color);
+    }
+}
+
+.loader-title{
+    color: rgb(87, 85, 85);
+    .logo-title{
+        font-family: "Agustina Regular", cursive;
+        font-weight: bolder;
+        font-size: 2.5rem;
+        color: var(--text-color);
+        padding: 0 5px;
+        font-variant-ligatures: no-common-ligatures;
+        -webkit-font-variant-ligatures: no-common-ligatures;
+    }
+    .grey-color{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        // font-weight: bold;
+        font-size: 2rem;
+        color: $logo-bracket-color;
+        padding: 0 15px;
+        font-variant-ligatures: no-common-ligatures;
+        -webkit-font-variant-ligatures: no-common-ligatures;
+    }
+}

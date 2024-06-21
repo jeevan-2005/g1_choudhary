@@ -1,0 +1,7 @@
+@import '../variables';
+
+body.light-theme {
+    --text-color: #{$text-color-light};
+    --background-color: #{$background-color-light};
+    --secondary-color: #{$secondary-color-light};
+}
