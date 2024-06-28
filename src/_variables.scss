@@ -1,16 +1,40 @@
 
 // Light theme variables
-$primary-color-light: #3498db;
-$secondary-color-light: #2ecc71;
-$background-color-light: #ffffff;
-$text-color-light: #000000;
+$primary-color-light: rgb(17, 0, 255);
+$secondary-color-light: rgb(145, 143, 143);
+$background-color-light-1: rgb(255, 255, 255);
+$background-color-light-2: rgb(235, 235, 235);
+$links-color-light: rgb(0, 0, 0);
+$links-hover-color-light: rgb(5, 33, 244);
+$text-color-light: rgb(1, 1, 1);
+$box-shadow-light-1: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(15, 92, 170, 0.35) 0px -2px 6px 0px inset;
+$box-shadow-light-2: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
 
 // Dark theme variables
-$primary-color-dark: #1abc9c;
-$secondary-color-dark: #e74c3c;
-$background-color-dark: #161719;
-$text-color-dark: #ecf0f1;
+$primary-color-dark: rgb(0, 255, 255);
+$secondary-color-dark: rgb(12, 199, 56);
+$background-color-dark-1: rgb(13,15,24);
+$background-color-dark-2: rgb(38, 47, 47);
+$links-color-dark: rgb(224, 224, 224);
+$links-hover-color-dark: rgb(0, 255, 255);
+$text-color-dark: rgb(236, 240, 241);
+$box-shadow-dark-1: rgba(32, 32, 87, 0.711) 0px 5px 10px -10px, rgba(151, 220, 225, 0.771) 0px 0px 40px -25px, rgba(21, 10, 187, 0.644) 0px -2px 6px 0px inset;
+$box-shadow-dark-2: rgba(30, 74, 50, 0.79) 0px 7px 29px 0px;
 
 
 // logo bracket variable
-$logo-bracket-color: rgb(45, 115, 227)
+$logo-bracket-color: rgb(45, 115, 227);
+$logo-drop-shadow: drop-shadow(0px 5px 5px rgb(0, 0, 255));
+
+// background gradient
+$border-background-gradient: linear-gradient(to bottom left, rgba(59, 230, 252, 0.78), rgb(255, 0, 255),
+rgb(4, 229, 245));
+
+// logo font-family
+$logo-font-family:  "Agustina Regular", cursive;
+
+// border-radius
+$border-radius-1: 20px;
+$border-radius-responsive: 20px 20px 0 0;
+$border-radius-2: 10px;

@@ -1,0 +1,32 @@
+@import '../../variables';
+@import '../../Theme/dark';
+@import '../../Theme/light';
+
+.main-content{
+    margin-top: 120px;
+    margin-left: 380px;
+    border: 1px solid;
+    z-index: 100;
+    height: calc(100vh - 135px);
+    border-radius: $border-radius-1;
+    padding: 10px;
+    margin-right: 60px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    background-color: var(--background-color-1);
+    color: var(--secondary-color);
+    // box-shadow: var(--box-shadow-1);
+}
+
+.main-content::-webkit-scrollbar{
+    display: none;
+}
+
+
+@media all and (max-width: 900px) {
+    .main-content{
+        width: 100%;
+        margin: 0;
+    }
+}

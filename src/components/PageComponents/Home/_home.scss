@@ -1,0 +1,12 @@
+
+.homePage{
+    height: calc(100vh - 93px);
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    z-index: 1;
+}
+
+.homePage::-webkit-scrollbar{
+    display: none;
+}

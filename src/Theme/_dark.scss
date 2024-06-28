@@ -2,6 +2,11 @@
 
 body.dark-theme {
     --text-color: #{$text-color-dark};
-    --background-color: #{$background-color-dark};
+    --background-color-1: #{$background-color-dark-1};
+    --background-color-2: #{$background-color-dark-2};
     --secondary-color: #{$secondary-color-dark};
+    --box-shadow-1: #{$box-shadow-dark-1};
+    --box-shadow-2: #{$box-shadow-dark-2};
+    --links-color: #{$links-color-dark};
+    --links-hover-color: #{$links-hover-color-dark};
 }

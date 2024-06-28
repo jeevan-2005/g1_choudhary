@@ -1,6 +1,6 @@
 import DisplayLottieAnm from "../../containers/displayLottie/DisplayLottieAnm";
 import { greeting, loadAnimation } from "../../portfolio";
-import "./loading.scss";
+import "./_loading.scss";
 
 const Loading = () => {
   const loadLines = [
@@ -42,8 +42,8 @@ const Loading = () => {
       </div>
       <div className="animation">
         <DisplayLottieAnm animationData={loadAnimation.animation} />
-        <p className="randomString">{generateRandomString()}</p>
       </div>
+      <p className="randomString">{generateRandomString()}</p>
     </div>
   );
 };
