@@ -1,12 +1,12 @@
+@import '../../../variables';
+@import '../../../Theme/dark';
+@import '../../../Theme/light';
 
 .homePage{
-    height: calc(100vh - 93px);
-    overflow-y: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    z-index: 1;
+    background-color: var(--background-color-1);
+    border-radius: $border-radius-1;
+    color: var(--secondary-color);
+    border: 1px solid;
+    padding: 10px;
 }
 
-.homePage::-webkit-scrollbar{
-    display: none;
-}

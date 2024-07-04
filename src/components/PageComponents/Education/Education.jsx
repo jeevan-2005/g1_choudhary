@@ -2,7 +2,7 @@ import './_education.scss';
 
 const Education = () => {
   return (
-    <div>
+    <div className='educationPage'>
       Education
     </div>
   )

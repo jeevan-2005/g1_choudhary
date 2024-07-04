@@ -2,7 +2,7 @@ import './_skills.scss';
 
 const Skills = () => {
   return (
-    <div>
+    <div className='skillsPage'>
       Skills
     </div>
   )
