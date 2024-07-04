@@ -25,6 +25,9 @@ body {
 }
 
 @media all and (max-width: 900px) {
+  .layout {
+    overflow-y: hidden;
+  }
   .content-container {
     flex-direction: column;
   }
