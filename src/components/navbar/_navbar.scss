@@ -9,7 +9,7 @@
   top: 10px;
   left: 10px;
   right: 10px;
-  z-index: 1000;
+  // z-index: 1000;
   background-color: var(--background-color-1);
   display: flex;
   align-items: center;
@@ -30,7 +30,6 @@
     }
     .grey-color {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      // font-weight: bold;
       font-size: 2rem;
       color: $logo-bracket-color;
       padding: 0 15px;
@@ -97,7 +96,6 @@
         width: 100%;
         height: 0.5px;
         background-color: rgb(83, 84, 115);
-        // transition: all 0.5s;
       }
     }
   }
@@ -123,6 +121,7 @@
 @media all and (min-width: 532px) and (max-width: 884px) {
   .navbar {
     border-radius: $border-radius-responsive;
+    top: calc(100vh - 110px);
     .logo {
       display: none;
     }
@@ -173,6 +172,8 @@
 @media all and (max-width: 480px) {
   .navbar {
     border-radius: $border-radius-responsive;
+    top: calc(100vh - 85px);
+    // z-index: 100;
     .logo {
       display: none;
     }
@@ -214,7 +215,6 @@
           width: 100%;
           height: 0.5px;
           background-color: rgb(83, 84, 115);
-          // transition: all 0.5s;
         }
       }
     }
