@@ -18,7 +18,7 @@
         text-align: center;
         width: 80%;
         color: $logo-bracket-color;
-        filter: $logo-drop-shadow;
+        filter: var(--logo-drop-shadow);
     }
 
     @media all and (min-width: 532px) and (max-width: 801px){
@@ -41,11 +41,11 @@
         font-family: $logo-font-family;
         font-weight: bolder;
         font-size: 3.2rem;
-        color: var(--text-color);
+        color: var(--text-color-2);
         padding: 0 5px;
         font-variant-ligatures: no-common-ligatures;
         -webkit-font-variant-ligatures: no-common-ligatures;
-        filter: $logo-drop-shadow;
+        filter: var(--logo-drop-shadow);
     }
     .grey-color{
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

@@ -1,4 +1,4 @@
-import DisplayLottieAnm from "../../containers/displayLottie/DisplayLottieAnm";
+import DisplayLottieAnm from "../displayLottie/DisplayLottieAnm";
 import { greeting, loadAnimation } from "../../portfolio";
 import "./_loading.scss";
 
