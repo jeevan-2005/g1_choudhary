@@ -9,7 +9,7 @@
   top: 10px;
   left: 10px;
   right: 10px;
-  // z-index: 1000;
+  z-index: 1000;
   background-color: var(--background-color-1);
   display: flex;
   align-items: center;
@@ -22,11 +22,11 @@
       font-family: $logo-font-family;
       font-weight: bolder;
       font-size: 2.2rem;
-      color: var(--text-color);
+      color: var(--text-color-2);
       padding: 0 5px;
       font-variant-ligatures: no-common-ligatures;
       -webkit-font-variant-ligatures: no-common-ligatures;
-      filter: $logo-drop-shadow;
+      filter: var(--logo-drop-shadow);
     }
     .grey-color {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -47,7 +47,7 @@
       li {
         list-style: none;
         position: relative;
-        font-family: "Twentieth Century" sans-serif;
+        font-family: $font-family-text-2;
         a {
           text-decoration: none;
           font-weight: 500;

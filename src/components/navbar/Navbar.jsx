@@ -1,14 +1,14 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import "./_navbar.scss";
 import { greeting, navLinks } from "../../portfolio";
 import { NavLink } from "react-router-dom";
-import { Fade } from "react-awesome-reveal";
 import PersonIcon from '@mui/icons-material/Person';
 import SchoolIcon from '@mui/icons-material/School';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import BuildIcon from '@mui/icons-material/Build';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import { useSpring, animated} from "@react-spring/web";
 
 const iconMap = {
   PersonIcon: <PersonIcon className="icon personIcon"/>,
@@ -19,11 +19,24 @@ const iconMap = {
 };
 
 const Navbar = () => {
-  const { theme, toggleTheme } = useContext(ThemeContext);
+
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    // Simulate loading complete after a delay
+    const timer = setTimeout(() => setLoaded(true), 0);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const styles = useSpring({
+    opacity: loaded ? 1 : 0,
+    transform: loaded ? 'translateY(0%)' : 'translateY(-100%)',
+    config: { tension: 170, friction: 60 } // Smooth spring settings
+  });
 
   return (
-    <Fade duration={1000} cascade damping={1}>
-      <nav className="navbar">
+    
+      <animated.div style={styles} className="navbar">
         <div className="logo" loading="lazy">
           <span className="grey-color"> &lt;</span>
           <span className="logo-title">{greeting.name}</span>
@@ -38,8 +51,7 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-      </nav>
-    </Fade>
+      </animated.div>
   );
 };
 
