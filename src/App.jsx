@@ -5,7 +5,6 @@ import MainContainer from "./components/mainContainer/MainContainer";
 import { useEffect, useState } from "react";
 import { loadAnimation } from "./portfolio";
 import Loading from "./components/loading/Loading";
-import { ThemeProvider } from "./context/ThemeContext";
 
 function App() {
   const [isLoding, setIsLoading] = useState(true);
@@ -23,7 +22,6 @@ function App() {
 
   return (
     <>
-      <ThemeProvider>
         {isLoding ? (
           <Loading />
         ) : (
@@ -37,7 +35,6 @@ function App() {
             </div>
           </>
         )}
-      </ThemeProvider>
     </>
   );
 }
