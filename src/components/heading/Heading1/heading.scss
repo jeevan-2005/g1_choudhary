@@ -1,0 +1,41 @@
+@import "../../../variables";
+@import "../../../Theme/dark";
+@import "../../../Theme/light";
+
+.heading {
+  margin-top: 20px;
+  .about {
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-family: $font-family-text-1;
+    font-weight: bolder;
+    color: var(--text-color-2);
+  }
+  .underline {
+    border: 4px solid;
+    border-radius: 5px;
+    width: 10%;
+    margin: auto;
+  }
+}
+
+@media all and (min-width: 431px) and (max-width: 900px) {
+  .heading {
+    .about {
+    }
+    .underline {
+    }
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 430px) {
+  .heading {
+    .about {
+      font-size: 1.5rem;
+    }
+    .underline {
+      width: 19%;
+    }
+  }
+}
