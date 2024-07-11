@@ -1,0 +1,49 @@
+@import "../../variables";
+@import "../../Theme/dark";
+@import "../../Theme/light";
+
+.btn{
+  // color: inherit !important; // Ensure it inherits the color passed via sx prop
+  // background-color: inherit !important; // Ensure it inherits the background color passed via sx prop
+  border-radius: 5px !important;
+  padding: 9px 15px !important;
+  font-weight: 600 !important;
+  letter-spacing: 2px !important;
+  font-family: "Twentieth Century", sans-serif !important;
+  font-size: 0.7rem !important;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  transition: height 0.5s ease;
+  background-color: var(--button-hover);
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.btn:hover {
+  color: var(--background-color-1);
+}
+
+.btn:hover::before {
+  height: 100%;
+}
+
+.btn:active {
+  background-color: rgb(87, 85, 85);
+}
+
+@media all and (min-width: 431px) and (max-width: 900px) {
+  .btn{
+    font-size: 0.7rem !important;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 430px) {
+  .btn{
+    font-size: 0.55rem !important;
+  }
+}
