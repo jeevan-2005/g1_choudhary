@@ -12,6 +12,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import "animate.css";
 import { useSpring, animated, useTransition } from "@react-spring/web";
+import emoji from "react-easy-emoji";
 
 const lightModeTexts = [
   "Feeling adventurous? Try Dark mode!",
@@ -90,7 +91,7 @@ const Sidebar = () => {
                 onClick={() => toggleFunction()}
                 className="info_more-btn"
               >
-                <span>{sidebarFull ? "Show Less 👆" : "Show More 👇"}</span>
+                <span>{sidebarFull ?  emoji( "Show Less 👆") : emoji("Show More 👇")}</span>
               </button>
             </div>
             <div className={`div2 ${sidebarFull ? "visible" : "hidden"}`}>
@@ -138,7 +139,7 @@ const Sidebar = () => {
                     )}
                   </ul>
                 </div>
-                <div className="copyright">Made with ❤️ by G-one Choudhary</div>
+                <div className="copyright">{emoji("Made with ❤️ by G-one Choudhary")}</div>
               </div>
             </div>
           </animated.div>
