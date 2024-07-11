@@ -4,7 +4,7 @@
 
 .gradient-border {
   width: 300px;
-  padding: 1px;
+  padding: 4px;
   position: fixed;
   top: 120px;
   bottom: 15px;
@@ -20,7 +20,7 @@
     overflow-y: auto;
     border-radius: $border-radius-1;
     background-color: var(--background-color-1);
-
+    box-shadow: inset;
     .div1,
     .div2 {
       transition: max-height 0.6s ease-in-out, opacity 0.5s ease-out;
@@ -35,11 +35,11 @@
           font-family: $logo-font-family;
           font-weight: bolder;
           font-size: 2.2rem;
-          color: var(--text-color);
+          color: var(--text-color-2);
           padding: 0 5px;
           font-variant-ligatures: no-common-ligatures;
           -webkit-font-variant-ligatures: no-common-ligatures;
-          filter: $logo-drop-shadow;
+          filter: var(--logo-drop-shadow);
         }
         .grey-color {
           font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -79,7 +79,7 @@
           font-size: 1.3rem;
           letter-spacing: 1px;
           word-spacing: 5px;
-          color: var(--text-color);
+          color: var(--text-color-2);
           font-weight: bolder;
           font-family: cursive;
         }
@@ -102,7 +102,7 @@
         justify-content: center;
         gap: 10px;
         flex-direction: column;
-        color: var(--text-color);
+        color: var(--text-color-2);
         p {
           font-family: monospace;
           text-align: center;
@@ -132,7 +132,7 @@
 
       .connect {
         width: 100%;
-        color: var(--text-color);
+        color: var(--text-color-2);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -153,7 +153,7 @@
           transition: color 0.1s ease-in-out;
         }
         .icon:hover {
-          color: var(--text-color);
+          color: var(--text-color-2);
           cursor: pointer;
         }
       }
@@ -161,6 +161,7 @@
         font-size: 14px;
         font-family: monospace;
         margin-top: 20px;
+        text-align: center;
       }
     }
   }
@@ -177,6 +178,7 @@
     height: max-content;
     position: sticky;
     z-index: 100;
+    padding: 2px;
     .sidebar {
       overflow-y: hidden;
       height: auto;
@@ -264,6 +266,7 @@
     height: max-content;
     position: sticky;
     z-index: 100;
+    padding: 1.5px;   
     .sidebar {
       overflow-y: hidden;
       height: auto;

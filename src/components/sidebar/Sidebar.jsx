@@ -1,8 +1,8 @@
 import { Badge, ChakraProvider } from "@chakra-ui/react";
 import { greeting, socialMediaLinks } from "../../portfolio";
 import "./_sidebar.scss";
-import { useContext, useState } from "react";
-import ToggleButton from "../../containers/toggle/ToggleButton";
+import { useContext, useEffect, useState } from "react";
+import ToggleButton from "../toggle/ToggleButton";
 import { ThemeContext } from "../../context/ThemeContext";
 import { ThemeProvider as MuiThemeProvider, createTheme } from "@mui/material";
 import Divider from "@mui/material/Divider";
@@ -11,6 +11,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import "animate.css";
+import { useSpring, animated, useTransition } from "@react-spring/web";
 
 const lightModeTexts = [
   "Feeling adventurous? Try Dark mode!",
@@ -44,6 +45,19 @@ const socialLinks = {
 const Sidebar = () => {
   const [sidebarFull, isSidebarFull] = useState(false);
   const { theme, toggleTheme } = useContext(ThemeContext);
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    // Simulate loading complete after a delay
+    const timer = setTimeout(() => setLoaded(true), 800);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const styles = useSpring({
+    opacity: loaded ? 1 : 0,
+    transform: loaded ? 'translateX(0%)' : 'translateX(-50%)',
+    config: { tension: 170, friction: 60 } // Smooth spring settings
+  });
 
   const muiTheme = createTheme({
     palette: {
@@ -65,7 +79,7 @@ const Sidebar = () => {
     <MuiThemeProvider theme={muiTheme}>
       <ChakraProvider>
         <div className="gradient-border">
-          <div className="sidebar animate__animated animate__fadeInLeft animate__duration-400ms">
+          <animated.div style={styles} className="sidebar">
             <div className="div1">
               <div className="logo" loading="lazy">
                 <span className="grey-color"> &lt;</span>
@@ -76,7 +90,7 @@ const Sidebar = () => {
                 onClick={() => toggleFunction()}
                 className="info_more-btn"
               >
-                <span>{sidebarFull? "Show Less 👆" : "Show More 👇"}</span>
+                <span>{sidebarFull ? "Show Less 👆" : "Show More 👇"}</span>
               </button>
             </div>
             <div className={`div2 ${sidebarFull ? "visible" : "hidden"}`}>
@@ -127,7 +141,7 @@ const Sidebar = () => {
                 <div className="copyright">Made with ❤️ by G-one Choudhary</div>
               </div>
             </div>
-          </div>
+          </animated.div>
         </div>
       </ChakraProvider>
     </MuiThemeProvider>
