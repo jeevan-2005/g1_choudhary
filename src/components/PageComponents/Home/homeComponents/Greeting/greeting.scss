@@ -1,0 +1,96 @@
+@import "../../../../../variables";
+@import "../../../../../Theme/dark";
+@import "../../../../../Theme/light";
+
+.greetingsTextDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+  h1 {
+    font-family: $font-family-text-1;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--text-color-3);
+    // color: rgb(0,7,45);
+    .wave-emoji {
+      animation-duration: 1.8s;
+      animation-iteration-count: infinite;
+      animation-name: wave;
+      display: inline-block;
+      transform-origin: 70% 70%;
+    }
+
+    @keyframes wave {
+      0% {
+        transform: rotate(0deg);
+      }
+      10% {
+        transform: rotate(-10deg);
+      }
+      20% {
+        transform: rotate(12deg);
+      }
+      30% {
+        transform: rotate(-10deg);
+      }
+      40% {
+        transform: rotate(9deg);
+      }
+      50% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+  }
+  p {
+    font-size: 1.5rem;
+    color: var(--text-color-1);
+    font-family: $font-family-text-2;
+    word-spacing: 2px;
+    font-weight: 500;
+  }
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+}
+
+@media all and (min-width: 431px) and (max-width: 900px) {
+  .greetingsTextDiv {
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+  }
+  .feelingProud {
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 430px) {
+  .greetingsTextDiv {
+    width: 90%;
+    text-align: center;
+    // height: 500px;
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    .buttons {
+      justify-content: center;
+    }
+  }
+  .feelingProud {
+    width: 80%;
+  }
+}

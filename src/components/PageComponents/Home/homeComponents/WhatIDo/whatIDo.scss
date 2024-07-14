@@ -1,0 +1,103 @@
+@import "../../../../../variables";
+@import "../../../../../Theme/dark";
+@import "../../../../../Theme/light";
+
+.content{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    .whatIDo{
+        width: 50%;
+        .heading{
+            margin: 0;
+            text-align: center;
+            h1{
+                font-size: 2.3rem;
+                font-family: $font-family-text-1;
+                font-weight: 600;
+                letter-spacing: 1px;
+                word-spacing: 2px;
+                color: var(--text-color-2);
+            }
+            p{
+                font-size: 11px;
+                font-family: $font-family-text-1;
+                letter-spacing: 2px;
+                color: rgb(143, 140, 140);
+                font-weight: 600;
+            }
+        }
+        .skills{
+            margin: 25px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 18px;
+            flex-wrap: wrap;
+            span{
+                width: 8%;
+            }
+        }
+        .subPoints{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            li{
+                list-style: none;
+                color: var(--text-color-1);
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 431px) and (max-width: 900px){
+    .content{
+        flex-direction: column;
+        .whatIDo{
+            width: 90%;
+            .heading{
+                h1{
+                    font-size: 2.4rem;
+                }
+                p{
+                    font-size: 13px;
+                }
+            }
+            .subPoints{
+                li{
+                    font-size: 19px;
+                    margin-left: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 430px){
+    .content{
+        flex-direction: column;
+        .whatIDo{
+            width: 90%;
+            .heading{
+                h1{
+                    font-size: 1.3rem;
+                }
+                p{
+                    font-size: 10px;
+                }
+            }
+            .subPoints{
+                li{
+                    width: 100%;
+                    margin: auto;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

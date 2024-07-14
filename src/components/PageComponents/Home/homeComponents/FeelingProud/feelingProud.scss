@@ -1,0 +1,20 @@
+@import "../../../../../variables";
+@import "../../../../../Theme/dark";
+@import "../../../../../Theme/light";
+
+.feelingProud {
+  width: 45%;
+  will-change: transform;
+}
+
+@media all and (min-width: 431px) and (max-width: 900px) {
+  .feelingProud {
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 430px) {
+  .feelingProud {
+    width: 80%;
+  }
+}

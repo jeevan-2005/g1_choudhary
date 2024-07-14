@@ -1,6 +1,31 @@
-@import '../../../variables';
-@import '../../../Theme/dark';
-@import '../../../Theme/light';
+@import "../../../variables";
+@import "../../../Theme/dark";
+@import "../../../Theme/light";
 
+.homePage {
+  .greetings {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--text-color);
+    margin-top: 30px;
+    height: auto;
+  }
+}
 
+@media all and (min-width: 431px) and (max-width: 900px) {
+  .homePage {
+    .greetings {
+      // flex-direction: column;
+    }
+  }
+}
 
+@media all and (min-width: 320px) and (max-width: 430px) {
+  .homePage {
+    .greetings {
+      flex-direction: column-reverse;
+      gap: 20px;
+    }
+  }
+}
