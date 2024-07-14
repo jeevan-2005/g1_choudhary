@@ -6,7 +6,7 @@ import { DurationContext } from "../../../context/DurationContext";
 
 const Heading = ({ text }) => {
   const [load, setLoad] = useState(false);
-  const {duration} = useContext(DurationContext);
+  const { duration } = useContext(DurationContext);
 
   useEffect(() => {
     const timer = setTimeout(() => setLoad(true), duration);
@@ -24,12 +24,7 @@ const Heading = ({ text }) => {
   return (
     <animated.div className="heading" style={styleHeading}>
       <h1 className="about">{text}</h1>
-      <div
-        className="underline"
-        style={{
-          borderColor: theme === "dark" ? "rgb(0, 255, 255)" : "rgb(0,28,85)",
-        }}
-      ></div>
+      <div className="underline"></div>
     </animated.div>
   );
 };
