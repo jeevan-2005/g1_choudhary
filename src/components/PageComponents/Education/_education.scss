@@ -2,3 +2,75 @@
 @import '../../../Theme/dark';
 @import '../../../Theme/light';
 
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 50px auto;
+    // animation: moveline 3s linear forwards;
+    .educationContainer{
+        padding: 10px 50px;
+        position: relative;
+        width: 100%;
+        animation: movedown 1s linear forwards;
+        opacity: 0;
+        // background-color: rgba(0,0,0,0.3);
+        .aboutEducation{
+            padding: 20px 30px;
+            background: rgb(255, 255, 255);
+            position: relative;
+            border-radius: 6px;
+            font-size: 15px;
+            h2{
+                font-weight: 600;
+                font-size: 25px;
+            }
+            small{
+                display: inline-block;
+            }
+        }
+        img{
+            position: absolute;
+            width: 100px;
+            border-radius: 50%;
+            left: 10px;
+            top: 32px;
+            z-index: 10;
+        }
+    }
+    @keyframes movedown {
+        0%{
+            opacity: 1;
+            transform: translateY(-30px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    .educationContainer:nth-child(1){
+        animation-delay: 0s;
+    }
+    .educationContainer:nth-child(2){
+        animation-delay: 2s;
+    }
+}
+
+@keyframes moveline {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    left: 0;
+    animation: moveline 3s linear forwards; 
+}
