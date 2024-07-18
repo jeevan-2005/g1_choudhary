@@ -56,7 +56,6 @@ const WhatIDo = () => {
   });
 
   const styleContent = useSpring({
-    opacity: inViewContent ? 1 : 0,
     transform: inViewContent ? "translateX(0%)" : "translateX(70%)",
     config: { tension: 170, friction: 60 },
   });

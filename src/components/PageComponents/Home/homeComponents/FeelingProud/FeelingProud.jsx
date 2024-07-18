@@ -15,7 +15,6 @@ const FeelingProudComponent = () => {
   }, [duration]);
 
   const styleImage = useSpring({
-    opacity: loaded ? 1 : 0,
     transform: loaded ? "translateX(0%)" : "translateX(100%)",
     config: { tension: 170, friction: 60 },
   });

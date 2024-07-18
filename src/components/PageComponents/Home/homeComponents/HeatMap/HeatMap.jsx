@@ -10,7 +10,6 @@ const HeatMap = () => {
   });
 
   const styleImage = useSpring({
-    opacity: inViewImage ? 1 : 0,
     transform: inViewImage ? "translateX(0%)" : "translateX(-70%)",
     config: { tension: 170, friction: 60 },
   });
