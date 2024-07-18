@@ -3,7 +3,7 @@ import "./button.scss";
 import { Button } from "@mui/material";
 import { ThemeContext } from "../../context/ThemeContext";
 
-const MyButton = ({ text, href, newTab, className }) => {
+const MyButton = ({ text, href}) => {
   const { theme } = useContext(ThemeContext);
 
   const handleOnClick = (href)=>{
@@ -19,7 +19,7 @@ const MyButton = ({ text, href, newTab, className }) => {
     <div>
       <Button onClick={()=>handleOnClick(href)}  className="btn"  sx={{
         color: theme === "dark"? "rgb(0,0,0)" : "rgb(207,207,207)" ,
-        backgroundColor: theme === "dark" ? "rgb(0, 255, 255)" : "rgb(0,28,85)",
+        backgroundColor: theme === "dark" ? "rgb(8,215,243)" : "rgb(0,28,85)",
       }}  >
         {text}
       </Button>
