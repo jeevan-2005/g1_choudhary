@@ -1,4 +1,4 @@
-import "./heatmap.scss";
+import "./_heatmap.scss";
 import { useSpring, animated } from "@react-spring/web";
 import { useInView } from "react-intersection-observer";
 import Heat_map from "./Heat_map";

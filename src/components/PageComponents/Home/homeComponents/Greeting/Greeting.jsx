@@ -1,4 +1,4 @@
-import "./greeting.scss";
+import "./_greeting.scss";
 import { greeting } from "../../../../../portfolio";
 import { useContext, useEffect, useState } from "react";
 import MyButton from "../../../../Button/Button";

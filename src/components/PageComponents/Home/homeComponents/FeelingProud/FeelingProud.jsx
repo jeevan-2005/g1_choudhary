@@ -1,4 +1,4 @@
-import "./feelingProud.scss";
+import "./_feelingProud.scss";
 import { useSpring, animated } from "@react-spring/web";
 import FeelingProud from "./Feeling_Proud";
 import { useContext, useEffect, useState } from "react";

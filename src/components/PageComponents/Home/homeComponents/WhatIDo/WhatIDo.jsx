@@ -1,7 +1,7 @@
 import Heading2 from "../../../../heading/Heading2/Heading2";
 import { myWork } from "../../../../../portfolio";
 import HeatMap from "../HeatMap/HeatMap";
-import "./whatIDo.scss";
+import "./_whatIDo.scss";
 import HtmlSvg from "../../../../../assets/skillsSvg/HtmlSvg";
 import CssSvg from "../../../../../assets/skillsSvg/CssSvg";
 import SaasSvg from "../../../../../assets/skillsSvg/SassSvg";
