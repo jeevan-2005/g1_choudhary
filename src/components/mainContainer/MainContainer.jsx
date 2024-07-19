@@ -1,6 +1,5 @@
 import "./_mainContainer.scss";
 import AppRoutes from "../../routes/AppRoutes";
-import "animate.css";
 import { useEffect, useState } from "react";
 import { useSpring, animated } from "@react-spring/web";
 
