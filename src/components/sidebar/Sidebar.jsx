@@ -10,7 +10,6 @@ import XIcon from "@mui/icons-material/X";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TelegramIcon from "@mui/icons-material/Telegram";
-import "animate.css";
 import { useSpring, animated } from "@react-spring/web";
 
 const lightModeTexts = [
