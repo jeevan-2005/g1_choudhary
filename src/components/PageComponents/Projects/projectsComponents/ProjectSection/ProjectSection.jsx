@@ -15,17 +15,26 @@ const ProjectSection = () => {
     dispatch(fetchGithubStats());
   }, [dispatch]);
 
+  const handleImageOnClick = (href)=>{
+    if(!href){
+      console.log(`Url not found...`);
+      return;
+    }
+    console.log(href);
+    window.open(href, "_blank", 'noopener,noreferrer');
+  }
+
   const projectsDemoLink = {
     "Bellavita-Clone": {
-      github: "https://bellavita-clone.vercel.app/",
+      demo: "https://bellavita-clone.vercel.app/",
       img: "src\\assets\\Images\\bellavitaSS.png",
     },
     "CityWeather-Tracker": {
-      github: "https://weather-app-seven-pearl-89.vercel.app/",
+      demo: "https://weather-app-seven-pearl-89.vercel.app/",
       img: "src\\assets\\Images\\weather-tracker.png",
     },
     BlueFly: {
-      github: "https://blue-fly-rho.vercel.app/",
+      demo: "https://blue-fly-rho.vercel.app/",
       img: "src\\assets\\Images\\bluflySS.png",
     },
   };
@@ -60,7 +69,7 @@ const ProjectSection = () => {
                 </li>
                 <div className="projectLinks">
                   <a
-                    href={projectsDemoLink[project.name].github}
+                    href={projectsDemoLink[project.name].demo}
                     target="_blank"
                   >
                     🌐Demo
@@ -80,7 +89,7 @@ const ProjectSection = () => {
             tiltAngleYInitial={-10}
             className="parallax-effect"
           >
-            <div className="projectImage">
+            <div className="projectImage" onClick={()=>handleImageOnClick(projectsDemoLink[project.name].demo)}>
               <img
                 src={projectsDemoLink[project.name].img}
                 alt={project.name}

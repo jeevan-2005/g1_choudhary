@@ -19,7 +19,7 @@
     .projectCard {
       width: 100%;
       margin: auto;
-      min-height: 200px;
+      // min-height: 200px;
       position: relative;
       box-shadow: var(--project-card-boxShadow);
       border-radius: 15px;
@@ -32,7 +32,6 @@
       text-align: center;
       border-top: var(--project-card-border);
       border-left: var(--project-card-border);
-      backdrop-filter: blur(5px);
       padding: 20px;
       h2 {
         font-size: 1.6rem;
@@ -73,6 +72,7 @@
       }
     }
     .projectImage {
+      cursor: pointer;
       padding: 4px;
       position: relative;
       z-index: 1;
@@ -102,10 +102,46 @@
       z-index: -1;
       filter: blur(20px);
       opacity: 0.9;
-      border-radius: inherit; /* Maintain the border radius of the parent */
+      border-radius: inherit;
     }
     .projectImage:hover {
       transform: skew(0deg, 0deg);
+    }
+  }
+}
+
+@media all and (min-width: 431px) and (max-width: 900px) {
+  .allProjects{
+    .singleProject{
+      flex-direction: column-reverse;
+      .projectCard{
+        width: 70%;
+        h2{
+          font-size: 2rem;
+        }
+        p{
+          font-size: 19px;
+        }
+        li{
+          font-size: 16px;
+        }
+        .projectLinks{
+          a{
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 430px) {
+  .allProjects{
+    .singleProject{
+      flex-direction: column-reverse;
+      .projectCard{
+        width: 100%;
+      }
     }
   }
 }
