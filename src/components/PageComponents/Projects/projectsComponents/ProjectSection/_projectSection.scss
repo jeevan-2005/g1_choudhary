@@ -1,0 +1,111 @@
+@import "../../../../../variables";
+@import "../../../../../Theme/dark";
+@import "../../../../../Theme/light";
+
+.allProjects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 85px;
+  width: 90%;
+  margin: auto;
+  margin-top: 60px;
+  .singleProject {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    .projectCard {
+      width: 100%;
+      margin: auto;
+      min-height: 200px;
+      position: relative;
+      box-shadow: var(--project-card-boxShadow);
+      border-radius: 15px;
+      background: var(--project-card-background-color);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      border-top: var(--project-card-border);
+      border-left: var(--project-card-border);
+      backdrop-filter: blur(5px);
+      padding: 20px;
+      h2 {
+        font-size: 1.6rem;
+        font-family: $font-family-text-2;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: var(--text-color-3);
+      }
+      p {
+        font-size: 16px;
+        color: var(--text-color-1);
+        margin: 15px auto;
+        font-style: italic;
+      }
+      li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-color-4);
+        font-size: 14px;
+      }
+      .projectLinks {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 20px;
+        a {
+          font-size: 16px;
+          color: var(--text-color-2);
+          font-weight: 500;
+          transition: color 0.2s ease;
+        }
+        a:hover {
+          color: var(--links-hover-color);
+        }
+      }
+    }
+    .projectImage {
+      padding: 4px;
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      margin: auto;
+      border-radius: 9px;
+      transform: skew(8deg, 1deg);
+      transition: transform 0.5s ease;
+      background-color: var(--project-card-background-color);
+      box-shadow: $project-image-box-shadow;
+      img {
+        border-radius: 9px;
+      }
+    }
+    .projectImage::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      right: -10px;
+      bottom: -10px;
+      background: linear-gradient(
+        to right,
+        rgba(0, 0, 255, 0.468),
+        rgba(255, 166, 0, 0.505)
+      );
+      z-index: -1;
+      filter: blur(20px);
+      opacity: 0.9;
+      border-radius: inherit; /* Maintain the border radius of the parent */
+    }
+    .projectImage:hover {
+      transform: skew(0deg, 0deg);
+    }
+  }
+}
