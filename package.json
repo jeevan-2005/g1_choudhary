@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.8.2",
     "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
@@ -24,7 +23,6 @@
     "lottie-react": "^2.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-easy-emoji": "^1.8.1",
     "react-github-calendar": "^4.1.6",
     "react-intersection-observer": "^9.10.3",
     "react-parallax-tilt": "^1.7.232",
