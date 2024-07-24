@@ -1,40 +1,72 @@
-
 // Light theme variables
 $primary-color-light: rgb(17, 0, 255);
-$secondary-color-light: rgb(145, 143, 143);
-$background-color-light-1: rgb(255, 255, 255);
-$background-color-light-2: rgb(235, 235, 235);
-$links-color-light: rgb(0, 0, 0);
+$secondary-color-light: rgb(71, 71, 71);
+$background-color-light-1: rgb(223, 241, 249);
+$background-color-light-2: rgb(244, 248, 250);
+$links-color-light: rgb(97, 95, 95);
 $links-hover-color-light: rgb(5, 33, 244);
-$text-color-light: rgb(1, 1, 1);
-$box-shadow-light-1: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(15, 92, 170, 0.35) 0px -2px 6px 0px inset;
-$box-shadow-light-2: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+$text-color-light-1: rgb(135, 149, 176);
+$text-color-light-2: rgb(0, 28, 85);
+$text-color-light-3: rgb(0, 28, 85);
+$text-color-light-4: rgb(7, 7, 7);
+$button-hover-light: rgb(12, 12, 12);
+$box-shadow-light-1: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+  rgba(15, 92, 170, 0.35) 0px -2px 6px 0px inset;
+$box-shadow-light-2: 0 10px 20px rgba(0, 0, 0, 0.319);
+$box-shadow-light-3: 3px 3px 5px 1px rgba(4, 4, 4, 0.11);
+$logo-drop-shadow-light: drop-shadow(0px 5px 5px rgb(31, 171, 190));
+$project-card-background-color-light: rgba(0, 0, 0, 0.02);
+$project-card-border-light: 1px solid rgba(0,0,0,0.3);
+$project-card-boxShadow-light: 5px 5px 5px rgba(0, 0, 0, 0.09);
+
 
 
 // Dark theme variables
 $primary-color-dark: rgb(0, 255, 255);
 $secondary-color-dark: rgb(12, 199, 56);
-$background-color-dark-1: rgb(13,15,24);
+$background-color-dark-1: rgb(13, 15, 24);
 $background-color-dark-2: rgb(38, 47, 47);
 $links-color-dark: rgb(224, 224, 224);
 $links-hover-color-dark: rgb(0, 255, 255);
-$text-color-dark: rgb(236, 240, 241);
-$box-shadow-dark-1: rgba(32, 32, 87, 0.711) 0px 5px 10px -10px, rgba(151, 220, 225, 0.771) 0px 0px 40px -25px, rgba(21, 10, 187, 0.644) 0px -2px 6px 0px inset;
-$box-shadow-dark-2: rgba(30, 74, 50, 0.79) 0px 7px 29px 0px;
+$text-color-dark-1: rgb(217, 220, 220);
+$text-color-dark-2: rgb(255, 255, 255);
+$text-color-dark-3: rgb(0, 176, 255);
+$text-color-dark-4: rgb(255, 255, 255);
+$button-hover-dark: rgb(248, 243, 243);
+$box-shadow-dark-1: rgba(32, 32, 87, 0.711) 0px 5px 10px -10px,
+  rgba(151, 220, 225, 0.771) 0px 0px 40px -25px,
+  rgba(21, 10, 187, 0.644) 0px -2px 6px 0px inset;
+$box-shadow-dark-2: 0 10px 20px rgba(255, 255, 255, 0.151);
+$box-shadow-dark-3: 3px 3px 5px 1px rgba(255, 255, 255, 0.367);
+$logo-drop-shadow-dark: drop-shadow(0px 5px 5px rgb(0, 0, 255));
+$project-card-background-color-dark:rgba(255, 255, 255, 0.2);
+$project-card-border-dark: 1px solid rgba(255, 255, 255, 0.5);
+$project-card-boxShadow-dark: 5px 5px 5px rgba(168, 165, 165, 0.1);
+
 
 
 // logo bracket variable
 $logo-bracket-color: rgb(45, 115, 227);
-$logo-drop-shadow: drop-shadow(0px 5px 5px rgb(0, 0, 255));
 
 // background gradient
-$border-background-gradient: linear-gradient(to bottom left, rgba(59, 230, 252, 0.78), rgb(255, 0, 255),
-rgb(4, 229, 245));
+$border-background-gradient: linear-gradient(
+  to bottom left,
+  rgba(59, 230, 252, 0.78),
+  rgb(255, 0, 255),
+  rgb(4, 229, 245)
+);
 
 // logo font-family
-$logo-font-family:  "Agustina Regular", cursive;
+$logo-font-family: "Agustina Regular", cursive;
+$font-family-text-1: "Montserrat", sans-serif;
+$font-family-text-2: "Twentieth Century" sans-serif;
 
 // border-radius
 $border-radius-1: 20px;
 $border-radius-responsive: 20px 20px 0 0;
 $border-radius-2: 10px;
+
+// box-shadows
+$project-image-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+0 1px 3px rgba(0, 0, 0, 0.08);
