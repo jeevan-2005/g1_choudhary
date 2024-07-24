@@ -1,0 +1,52 @@
+.mySkillsDiv {
+  .allSkills {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    .mySkill {
+      position: relative;
+      box-shadow: var(--project-card-boxShadow);
+      width: 9%;
+      height: 9%;
+      border-radius: 15px;
+      background: var(--project-card-background-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px;
+      border-left: var(--project-card-border);
+      border-top: var(--project-card-border);
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+    }
+    .mySkill:hover {
+      transform: scale(1.1);
+      border: var(--project-card-border);
+    }
+  }
+}
+
+@media all and (min-width: 431px) and (max-width: 900px) {
+    .mySkillsDiv{
+        .allSkills{
+            gap: 40px;
+            .mySkill{
+                width: 12%;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 430px) {
+    .mySkillsDiv{
+        .allSkills{
+            gap: 30px;
+            .mySkill{
+                width: 22%;
+            }
+        }
+    }
+}
