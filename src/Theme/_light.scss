@@ -1,12 +1,21 @@
-@import '../variables';
+@import "../variables";
 
 body.light-theme {
-    --text-color: #{$text-color-light};
-    --background-color-1: #{$background-color-light-1};
-    --background-color-2: #{$background-color-light-2};
-    --secondary-color: #{$secondary-color-light};
-    --box-shadow-1: #{$box-shadow-light-1};
-    --box-shadow-2: #{$box-shadow-light-2};
-    --links-color: #{$links-color-light};
-    --links-hover-color: #{$links-hover-color-light};
+  --text-color-1: #{$text-color-light-1};
+  --text-color-2: #{$text-color-light-2};
+  --text-color-3: #{$text-color-light-3};
+  --text-color-4: #{$text-color-light-4};
+  --background-color-1: #{$background-color-light-1};
+  --background-color-2: #{$background-color-light-2};
+  --secondary-color: #{$secondary-color-light};
+  --box-shadow-1: #{$box-shadow-light-1};
+  --box-shadow-2: #{$box-shadow-light-2};
+  --box-shadow-3: #{$box-shadow-light-3};
+  --links-color: #{$links-color-light};
+  --links-hover-color: #{$links-hover-color-light};
+  --logo-drop-shadow: #{$logo-drop-shadow-light};
+  --button-hover: #{$button-hover-light};
+  --project-card-background-color: #{$project-card-background-color-light};
+  --project-card-border: #{$project-card-border-light};
+  --project-card-boxShadow: #{$project-card-boxShadow-light};
 }
