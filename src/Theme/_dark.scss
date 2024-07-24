@@ -1,12 +1,21 @@
-@import '../variables';
+@import "../variables";
 
 body.dark-theme {
-    --text-color: #{$text-color-dark};
-    --background-color-1: #{$background-color-dark-1};
-    --background-color-2: #{$background-color-dark-2};
-    --secondary-color: #{$secondary-color-dark};
-    --box-shadow-1: #{$box-shadow-dark-1};
-    --box-shadow-2: #{$box-shadow-dark-2};
-    --links-color: #{$links-color-dark};
-    --links-hover-color: #{$links-hover-color-dark};
+  --text-color-1: #{$text-color-dark-1};
+  --text-color-2: #{$text-color-dark-2};
+  --text-color-3: #{$text-color-dark-3};
+  --text-color-4: #{$text-color-dark-4};
+  --background-color-1: #{$background-color-dark-1};
+  --background-color-2: #{$background-color-dark-2};
+  --secondary-color: #{$secondary-color-dark};
+  --box-shadow-1: #{$box-shadow-dark-1};
+  --box-shadow-2: #{$box-shadow-dark-2};
+  --box-shadow-3: #{$box-shadow-dark-3};
+  --links-color: #{$links-color-dark};
+  --links-hover-color: #{$links-hover-color-dark};
+  --logo-drop-shadow: #{$logo-drop-shadow-dark};
+  --button-hover: #{$button-hover-dark};
+  --project-card-background-color: #{$project-card-background-color-dark};
+  --project-card-border: #{$project-card-border-dark};
+  --project-card-boxShadow: #{$project-card-boxShadow-dark};
 }
