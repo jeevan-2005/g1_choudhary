@@ -110,6 +110,20 @@
   }
 }
 
+@media all and (min-width: 1000px) and (max-width: 1300px){
+  .allProjects{
+    .singleProject{
+      flex-direction: column-reverse;
+      .projectCard{
+        width: 70%;
+      }
+      .projectImage{
+        width: 90%;
+      }
+    }
+  }
+}
+
 @media all and (min-width: 431px) and (max-width: 900px) {
   .allProjects{
     .singleProject{
