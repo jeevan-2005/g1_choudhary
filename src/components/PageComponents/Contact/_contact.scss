@@ -1,4 +1,34 @@
-@import '../../../variables';
-@import '../../../Theme/dark';
-@import '../../../Theme/light';
+@import "../../../variables";
+@import "../../../Theme/dark";
+@import "../../../Theme/light";
 
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .connectSvg {
+    width: 55%;
+  }
+  .contactMedium {
+    width: 45%;
+  }
+}
+
+@media all and (min-width: 431px) and (max-width: 900px) {
+    .contact{
+        margin-top: 40px;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 430px) {
+  .contact {
+    margin-top: 40px;
+    flex-direction: column;
+    .connectSvg {
+      width: 95%;
+    }
+    .contactMedium {
+      width: 100%;
+    }
+  }
+}
