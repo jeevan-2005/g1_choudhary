@@ -43,13 +43,10 @@ export const fetchGithubStats = () => async (dispatch) => {
       }
     );
 
-    console.log(response);
 
     const pinnedRepos = response.data.data.user.pinnedItems.edges.map(
       (edge) => edge.node
     );
-
-    // console.log(pinnedRepos, contributions);
 
     dispatch({
       type: FETCH_GITHUB_STATS,
