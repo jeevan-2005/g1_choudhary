@@ -1,0 +1,76 @@
+@import "../../../../../variables";
+@import "../../../../../Theme/dark";
+@import "../../../../../Theme/light";
+
+.socialLinks {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  .contactText {
+    display: flex;
+    gap: 50px;
+    .mail,
+    .call {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-size: 13px;
+      gap: 7px;
+      position: relative;
+      color: var(--text-color-1);
+      font-weight: 600;
+      border-radius: 5px;
+      padding: 5px;
+      background: var(--project-card-background-color);
+      border: var(--project-card-border);
+      .icon {
+        transition: color 0.2s ease-in-out;
+      }
+      .icon:hover {
+        color: var(--text-color-2);
+        cursor: pointer;
+      }
+    }
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    li {
+      list-style: none;
+      .icon {
+        transition: color 0.2s ease-in-out;
+      }
+      .icon:hover {
+        color: var(--text-color-2);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+
+@media all and (min-width: 431px) and (max-width: 900px) {
+    .socialLinks{
+        width: 50%;
+        .contactText{
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 430px) {
+  .socialLinks{
+    .contactText{
+        flex-direction: column;
+        gap: 10px;
+    }
+  }
+}
