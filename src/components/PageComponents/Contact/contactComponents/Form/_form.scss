@@ -1,10 +1,30 @@
-form {
+.contactingMethod{
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  gap: 20px;
-  width: 80%;
-  margin: auto;
-  
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+  width: 100%;
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media all and (min-width: 431px) and (max-width: 900px) {
+  .contactingMethod{
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    form{
+      width: 50%;
+      margin: auto;
+    }
+  }
 }

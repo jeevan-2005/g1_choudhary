@@ -4,15 +4,13 @@ import emailjs from "@emailjs/browser";
 import { Alert, Slide, Snackbar, TextField } from "@mui/material";
 import LoadingButton from "@mui/lab/LoadingButton";
 import SendIcon from "@mui/icons-material/Send";
-import { outlinedInputClasses } from '@mui/material/OutlinedInput';
-import { createTheme, ThemeProvider, useTheme } from '@mui/material/styles';
+import ConnectLinks from '../ConnectLinks/ConnectLinks.jsx'
 
 function SlideTransition(props) {
-  return <Slide {...props} direction="down" />;
+  return <Slide {...props} direction="up" />;
 }
 
 const Form = () => {
-
   const form = useRef();
   const initialContactData = {
     name: "",
@@ -20,7 +18,7 @@ const Form = () => {
     message: "",
   };
   const [contactData, setContactData] = useState(initialContactData);
-  const [snackbarDetials, setSnackbarDetails] = useState({
+  const [snackbarDetails, setSnackbarDetails] = useState({
     message: "hello",
     open: false,
     severity: "success",
@@ -29,7 +27,7 @@ const Form = () => {
 
   const handleClose = () => {
     setSnackbarDetails({
-      ...snackbarDetials,
+      ...snackbarDetails,
       open: false,
     });
   };
@@ -68,72 +66,79 @@ const Form = () => {
 
   return (
     <>
-      <form ref={form} onSubmit={sendEmail}>
-        <TextField
-          label="Full Name"
-          name="user_name"
-          variant="standard"
-          placeholder="Enter your Name"
-          required
-          value={contactData.name}
-          onChange={(e) => {
-            setContactData({ ...contactData, name: e.target.value });
-          }}
-          fullWidth
-          color="secondary"
-        />
-        <TextField
-          type="email"
-          name="user_email"
-          label="Email"
-          variant="standard"
-          placeholder="Enter email"
-          required
-          value={contactData.email}
-          onChange={(e) => {
-            setContactData({ ...contactData, email: e.target.value });
-          }}
-          fullWidth
-        />
-        <TextField
-          label="Message"
-          name="message"
-          multiline
-          rows={4}
-          variant="outlined"
-          placeholder="Type your message here....."
-          required
-          value={contactData.message}
-          onChange={(e) => {
-            setContactData({ ...contactData, message: e.target.value });
-          }}
-          fullWidth
-        />
-        <LoadingButton
-          loading={loading}
-          type="submit"
-          variant="contained"
-          endIcon={<SendIcon />}
-          loadingPosition="end"
-          fullWidth
-        >
-          Send
-        </LoadingButton>
-      </form>
+      <div className="contactingMethod">
+        <form ref={form} onSubmit={sendEmail}>
+          <TextField
+            label="Full Name"
+            name="user_name"
+            variant="standard"
+            placeholder="Enter your Name"
+            required
+            value={contactData.name}
+            onChange={(e) => {
+              setContactData({ ...contactData, name: e.target.value });
+            }}
+            fullWidth
+            color="secondary"
+          />
+          <TextField
+            type="email"
+            name="user_email"
+            label="Email"
+            variant="standard"
+            placeholder="Enter email"
+            required
+            value={contactData.email}
+            onChange={(e) => {
+              setContactData({ ...contactData, email: e.target.value });
+            }}
+            fullWidth
+          />
+          <TextField
+            label="Message"
+            name="message"
+            multiline
+            rows={4}
+            variant="outlined"
+            placeholder="Type your message here....."
+            required
+            value={contactData.message}
+            onChange={(e) => {
+              setContactData({ ...contactData, message: e.target.value });
+            }}
+            fullWidth
+          />
+          <LoadingButton
+            loading={loading}
+            type="submit"
+            variant="contained"
+            endIcon={<SendIcon />}
+            loadingPosition="end"
+            fullWidth
+          >
+            Send
+          </LoadingButton>
+        </form>
+        <ConnectLinks/>
+      </div>
 
       <Snackbar
         anchorOrigin={{
-          vertical: "top",
+          vertical: "bottom",
           horizontal: "center",
         }}
-        open={snackbarDetials.open}
+        open={snackbarDetails.open}
         onClose={handleClose}
         TransitionComponent={SlideTransition}
         key={SlideTransition.name}
-        autoHideDuration={3000}
+        autoHideDuration={2000}
       >
-        <Alert onClose={handleClose} severity="success" sx={{ width: "100%" }}>
-          {snackbarDetials.message}
+        <Alert
+          onClose={handleClose}
+          severity={snackbarDetails.severity}
+          sx={{ width: "100%" }}
+        >
+          {snackbarDetails.message}
         </Alert>
       </Snackbar>
     </>
