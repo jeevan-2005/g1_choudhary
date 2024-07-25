@@ -46,7 +46,7 @@ const socialMediaLinks = [
   },
   {
     text: "gmail",
-    to: "jeevanchoudhary2005@gmail.com",
+    to: "mailto:jeevanchoudhary2005@gmail.com",
   },
   {
     text: "telegram",
@@ -60,6 +60,10 @@ const socialMediaLinks = [
     text: "stackoverflow",
     to: "https://stackoverflow.com/users/25662708/jeevan-choudhary",
   },
+  {
+    text: "contactNumber",
+    to: "tel:+918897933159",
+  }
 ];
 
 const greeting = {
