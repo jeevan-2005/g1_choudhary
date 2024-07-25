@@ -4,6 +4,14 @@ import MyButton from "../../Button/Button";
 import Heading from "../../heading/Heading1/Heading";
 import "./_education.scss";
 import { useSpring, animated } from "@react-spring/web";
+import iiitkLogo from '../../../assets/Images/iiitKLogo.png'
+import trividyaaLogo from '../../../assets/Images/trividyaaLogo.png'
+import { Insights } from "@mui/icons-material";
+
+const edImages = {
+  "iiitKLogo": iiitkLogo,
+  "trividyaaLogo": trividyaaLogo,
+}
 
 const Education = () => {
   const { ref: refEdContent1, inView: inViewEdContent1 } = useInView({
@@ -53,7 +61,7 @@ const Education = () => {
         <div className="parentEdContainer">
           {education.institutes.map((institute) => (
             <div className={institute.className} key={institute.id}>
-              <animated.img src={institute.imgSrc} alt={institute.imgAlt}
+              <animated.img src={edImages[institute.imgSrc]} alt={institute.imgAlt}
                ref={institute.id == 1? refEdImage1 : refEdImage2} style={institute.id == 1? styleEdImage1 : styleEdImage2} 
                />
               <animated.div

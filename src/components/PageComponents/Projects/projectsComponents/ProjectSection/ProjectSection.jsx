@@ -6,6 +6,9 @@ import "./_projectSection.scss";
 import { CircularProgress } from "@mui/material";
 import { useInView } from "react-intersection-observer";
 import { useSpring } from "@react-spring/web";
+import bellavitaSS from '../../../../../assets/Images/bellavitaSS.png';
+import bluflySS from '../../../../../assets/Images/bluflySS.png';
+import weatherTracker from '../../../../../assets/Images/weather-tracker.png';
 
 const ProjectSection = () => {
   const { loading, data, error } = useSelector((state) => state);
@@ -27,15 +30,15 @@ const ProjectSection = () => {
   const projectsDemoLink = {
     "Bellavita-Clone": {
       demo: "https://bellavita-clone.vercel.app/",
-      img: "src\\assets\\Images\\bellavitaSS.png",
+      img: bellavitaSS
     },
     "CityWeather-Tracker": {
       demo: "https://weather-app-seven-pearl-89.vercel.app/",
-      img: "src\\assets\\Images\\weather-tracker.png",
+      img: weatherTracker
     },
     BlueFly: {
       demo: "https://blue-fly-rho.vercel.app/",
-      img: "src\\assets\\Images\\bluflySS.png",
+      img: bluflySS
     },
   };
 
