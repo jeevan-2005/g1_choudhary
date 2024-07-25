@@ -120,7 +120,7 @@ const education = {
   institutes: [
     {
       id:1,
-      imgSrc: "src\\assets\\Images\\iiitKLogo.png",
+      imgSrc: "iiitKLogo",
       imgAlt: "iiitKLogo",
       className: "btech educationContainer",
       name: "Indian Institute Of Information Technology Kota",
@@ -132,7 +132,7 @@ const education = {
     },
     {
       id:2,
-      imgSrc: "src\\assets\\Images\\trividyaaLogo.png",
+      imgSrc: "trividyaaLogo",
       imgAlt: "trividyaaLogo",
       className: "intermediate educationContainer",
       name: "Trividyaa Junior College",
