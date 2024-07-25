@@ -18,17 +18,6 @@ const Contact = () => {
     },
   });
 
-  const { ref: refForm, inView: inViewForm } = useInView({
-    triggerOnce: true,
-    threshold: 0,
-  });
-
-  const styleForm = useSpring({
-    opacity: inViewForm ? 1 : 0,
-    transform: inViewForm ? "translateX(0%)" : "translateX(70%)",
-    config: { tension: 170, friction: 60 },
-  });
-
   const { ref: refConnectSvg, inView: inViewConnectSvg } = useInView({
     triggerOnce: true,
     threshold: 0,
@@ -53,13 +42,14 @@ const Contact = () => {
         >
           <ConnectSvg theme={theme} />
         </animated.div>
-        <animated.div className="contactMedium" ref={refForm} style={styleForm}>
+        <div className="contactMedium" >
           <ThemeProvider theme={appliedTheme}>
             <CssBaseline />
             <Form />
           </ThemeProvider>
-        </animated.div>
+        </div>
       </div>
+      
     </>
   );
 };
