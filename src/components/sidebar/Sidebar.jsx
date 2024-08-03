@@ -11,7 +11,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import { useSpring, animated } from "@react-spring/web";
-import devImg from '../../assets/Images/devImg.jpeg'
+import myImg from '../../assets/Images/myPhoto.png'
 
 const lightModeTexts = [
   "Feeling adventurous? Try Dark mode!",
@@ -97,7 +97,7 @@ const Sidebar = () => {
               <div className="myself">
                 <img
                   loading="lazy"
-                  src={devImg}
+                  src={myImg}
                   alt="Jeevan_Choudhary"
                 />
                 <div className="names">
