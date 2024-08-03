@@ -85,7 +85,7 @@
         }
         img {
           border-radius: 50%;
-          height: 80%;
+          // height: 80%;
           width: 80%;
           box-shadow: var(--box-shadow-2);
         }
@@ -217,7 +217,6 @@
           height: min-content;
           img {
             width: 100px;
-            height: 100px;
           }
           .names {
             display: flex;
@@ -304,7 +303,6 @@
           height: min-content;
           img {
             width: 90px;
-            height: 90px;
           }
           .names {
             display: flex;
