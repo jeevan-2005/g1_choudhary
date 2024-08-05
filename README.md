@@ -35,7 +35,7 @@ Check out the live demo of my portfolio [here](https://g1-choudhary.vercel.app/)
 
 ## Illustrations
 
--[unDraw](https://undraw.co)
+- [unDraw](https://undraw.co)
 
 ## Future Enhancements
 
