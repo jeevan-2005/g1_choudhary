@@ -19,11 +19,11 @@ Check out the live demo of my portfolio [here](https://g1-choudhary.vercel.app/)
 
 ### Light Mode
 
-![Light Mode](path/to/light-mode-image.png)
+![Light Mode](https://github.com/user-attachments/assets/3fce1e65-a526-4956-9315-3ecd2bdc77a5)
 
 ### Dark Mode
 
-![Dark Mode](path/to/dark-mode-image.png)
+![Dark Mode](https://github.com/user-attachments/assets/55d88b00-e5ad-4745-bc8e-387b2254d1e4)
 
 ## Technologies Used
 
