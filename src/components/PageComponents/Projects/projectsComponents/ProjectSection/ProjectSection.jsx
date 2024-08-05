@@ -1,16 +1,18 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchGithubStats } from "../../../../../redux/actionTypes";
 import Tilt from "react-parallax-tilt";
 import "./_projectSection.scss";
 import { CircularProgress } from "@mui/material";
-import { useInView } from "react-intersection-observer";
-import { useSpring } from "@react-spring/web";
 import bellavitaSS from '../../../../../assets/Images/bellavitaSS.png';
 import bluflySS from '../../../../../assets/Images/bluflySS.png';
+import portfolioSSDark from '../../../../../assets/Images/portfolioSSDark.png';
+import portfolioSSLight from '../../../../../assets/Images/portfolioSSLight.png';
 import weatherTracker from '../../../../../assets/Images/weather-tracker.png';
+import { ThemeContext } from "../../../../../context/ThemeContext";
 
 const ProjectSection = () => {
+  const {theme} = useContext(ThemeContext)
   const { loading, data, error } = useSelector((state) => state);
   const dispatch = useDispatch();
 
@@ -28,6 +30,10 @@ const ProjectSection = () => {
   };
 
   const projectsDemoLink = {
+    "g1_choudhary": {
+      demo: "https://g1-choudhary.vercel.app/",
+      img: theme == "dark" ? portfolioSSDark : portfolioSSLight
+    },
     "Bellavita-Clone": {
       demo: "https://bellavita-clone.vercel.app/",
       img: bellavitaSS
