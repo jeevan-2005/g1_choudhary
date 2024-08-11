@@ -23,7 +23,7 @@ const ConnectLinks = () => {
       <div className="contactText" >
         <div className="mail">
           <EmailIcon className="icon" color="disabled" />
-          <span>jeevanchoudhary@gmail.com</span>
+          <span>jeevanchoudhary2005@gmail.com</span>
         </div>
         <div className="call">
           <CallIcon className="icon" color="disabled" />
