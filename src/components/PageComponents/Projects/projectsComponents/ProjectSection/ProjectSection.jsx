@@ -5,7 +5,7 @@ import Tilt from "react-parallax-tilt";
 import "./_projectSection.scss";
 import { CircularProgress } from "@mui/material";
 import bellavitaSS from '../../../../../assets/Images/bellavitaSS.png';
-import bluflySS from '../../../../../assets/Images/bluflySS.png';
+import vechileMovement from '../../../../../assets/Images/vechileMovement.png';
 import portfolioSSDark from '../../../../../assets/Images/portfolioSSDark.png';
 import portfolioSSLight from '../../../../../assets/Images/portfolioSSLight.png';
 import weatherTracker from '../../../../../assets/Images/weather-tracker.png';
@@ -42,9 +42,9 @@ const ProjectSection = () => {
       demo: "https://weather-app-seven-pearl-89.vercel.app/",
       img: weatherTracker
     },
-    BlueFly: {
-      demo: "https://blue-fly-rho.vercel.app/",
-      img: bluflySS
+    "vehicle-movement-map": {
+      demo: "https://vehicle-movement-map.vercel.app/",
+      img: vechileMovement
     },
   };
 
