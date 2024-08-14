@@ -5,7 +5,7 @@ import Tilt from "react-parallax-tilt";
 import "./_projectSection.scss";
 import { CircularProgress } from "@mui/material";
 import bellavitaSS from '../../../../../assets/Images/bellavitaSS.png';
-import vechileMovement from '../../../../../assets/Images/vechileMovement.png';
+import vehicleMovement from '../../../../../assets/Images/vehicleMovement.png';
 import portfolioSSDark from '../../../../../assets/Images/portfolioSSDark.png';
 import portfolioSSLight from '../../../../../assets/Images/portfolioSSLight.png';
 import weatherTracker from '../../../../../assets/Images/weather-tracker.png';
@@ -44,7 +44,7 @@ const ProjectSection = () => {
     },
     "vehicle-movement-map": {
       demo: "https://vehicle-movement-map.vercel.app/",
-      img: vechileMovement
+      img: vehicleMovement
     },
   };
 
