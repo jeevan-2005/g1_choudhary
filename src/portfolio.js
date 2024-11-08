@@ -71,7 +71,7 @@ const greeting = {
   greet: "Hi, I'm G1",
   description:
     "A passionate Full Stack Software Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs / Express / MongoDB and some other cool libraries and frameworks.",
-  resumeLink: "",
+  resumeLink: "https://drive.google.com/file/d/1qF1TTI7JfCRruOKELSjd41iBQQ4Yyuzz/view?usp=sharing",
   portfolioRepoLink: "https://github.com/jeevan-2005/developerPortfolio",
 };
 
