@@ -4,7 +4,7 @@ import loadingAnimation from "./assets/lottie/loadingAnimation.json";
 const loadAnimation = {
   enabled: true,
   animation: loadingAnimation,
-  duration: 4000,
+  duration: 1500,
 };
 
 const navLinks = [
