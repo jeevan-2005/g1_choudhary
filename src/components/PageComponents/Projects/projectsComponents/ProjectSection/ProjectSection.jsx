@@ -4,15 +4,17 @@ import { fetchGithubStats } from "../../../../../redux/actionTypes";
 import Tilt from "react-parallax-tilt";
 import "./_projectSection.scss";
 import { CircularProgress } from "@mui/material";
-import bellavitaSS from '../../../../../assets/Images/bellavitaSS.png';
-import vehicleMovement from '../../../../../assets/Images/vehicleMovement.png';
-import portfolioSSDark from '../../../../../assets/Images/portfolioSSDark.png';
-import portfolioSSLight from '../../../../../assets/Images/portfolioSSLight.png';
-import weatherTracker from '../../../../../assets/Images/weather-tracker.png';
+import bellavitaSS from "../../../../../assets/Images/bellavitaSS.png";
+import vehicleMovement from "../../../../../assets/Images/vehicleMovement.png";
+import portfolioSSDark from "../../../../../assets/Images/portfolioSSDark.png";
+import portfolioSSLight from "../../../../../assets/Images/portfolioSSLight.png";
+import weatherTracker from "../../../../../assets/Images/weather-tracker.png";
+import ELearningDark from "../../../../../assets/Images/eLearningDark.png";
+import ELearningLight from "../../../../../assets/Images/eLearningLight.png";
 import { ThemeContext } from "../../../../../context/ThemeContext";
 
 const ProjectSection = () => {
-  const {theme} = useContext(ThemeContext)
+  const { theme } = useContext(ThemeContext);
   const { loading, data, error } = useSelector((state) => state);
   const dispatch = useDispatch();
 
@@ -30,21 +32,25 @@ const ProjectSection = () => {
   };
 
   const projectsDemoLink = {
-    "g1_choudhary": {
+    g1_choudhary: {
       demo: "https://g1-choudhary.vercel.app/",
-      img: theme == "dark" ? portfolioSSDark : portfolioSSLight
+      img: theme == "dark" ? portfolioSSDark : portfolioSSLight,
     },
     "Bellavita-Clone": {
       demo: "https://bellavita-clone.vercel.app/",
-      img: bellavitaSS
+      img: bellavitaSS,
     },
     "CityWeather-Tracker": {
       demo: "https://weather-app-seven-pearl-89.vercel.app/",
-      img: weatherTracker
+      img: weatherTracker,
     },
     "vehicle-movement-map": {
       demo: "https://vehicle-movement-map.vercel.app/",
-      img: vehicleMovement
+      img: vehicleMovement,
+    },
+    "E-Learning": {
+      demo: "https://e-learning-lms-ten.vercel.app/",
+      img: theme == "dark" ? ELearningDark : ELearningLight,
     },
   };
 
@@ -55,13 +61,15 @@ const ProjectSection = () => {
   return (
     <div className="allProjects">
       {loading ? (
-        <div style={{
-          display:"flex",
-          alignItems: "center",
-          justifyContent: "center",
-          height:"50vh",
-        }}>
-          <CircularProgress size={"3rem"} thickness={3.6}/>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            height: "50vh",
+          }}
+        >
+          <CircularProgress size={"3rem"} thickness={3.6} />
         </div>
       ) : (
         data.map((project, i) => (
